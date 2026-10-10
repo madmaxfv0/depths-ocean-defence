@@ -1,5 +1,7 @@
 # DEPTHS — Ocean Defence
 
+[![CI](https://github.com/madmaxfv0/depths-ocean-defence/actions/workflows/ci.yml/badge.svg)](https://github.com/madmaxfv0/depths-ocean-defence/actions/workflows/ci.yml)
+
 A fixed-screen arcade shooter written in Java and JavaFX. You steer a submarine along the sea floor and hold off descending waves of sea creatures. Every shape on screen is drawn in code from polygons, ovals and lines; the game ships no image or sound files.
 
 ![Wave 4 in progress: enemy formation, coral barriers, enemy shots and the submarine](docs/screenshots/gameplay-wave-4.png)
