@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Zulu's "jdk+fx" package bundles JavaFX, so no separate SDK download.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: "21"
+          java-package: jdk+fx
+      - name: Compile and run the headless game-rule checks
+        run: scripts/check.sh

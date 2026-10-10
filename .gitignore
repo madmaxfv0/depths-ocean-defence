@@ -1,0 +1,5 @@
+build/
+*.class
+*.ctxt
+*.jar
+.DS_Store
